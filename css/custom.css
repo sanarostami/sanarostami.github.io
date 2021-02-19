@@ -1,0 +1,233 @@
+@import '../fonts/fontawesome/css/all.css';
+@font-face {
+    font-family: "yekan";
+    src: url(../fonts/yekan/Yekan.eot);
+    src: url(../fonts/yekan/Yekan.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/Yekan.woff) format("woff"), url(../fonts/yekan/Yekan.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url(../fonts/IRANSans/IRANSansWeb\(FaNum\).eot);
+    src: url(../fonts/IRANSans/IRANSansWeb\(FaNum\)_Light.eot) format("embedded-opentype"), url(../fonts/IRANSans/IRANSansWeb\(FaNum\).woff) format("woff"), url(../fonts/IRANSans/IRANSansWeb\(FaNum\).ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    unicode-range: U+0600-U+06FF;  /* For Persian character range */
+}
+body{
+    font-family: "IRANSans";
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.2;
+    direction: rtl;
+}
+#loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+  }
+  #c-loading{
+    position: fixed;
+    z-index: 9999;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 20px solid #929292;
+    border-radius: 50%;
+    border-top: 20px solid #00859c;
+    animation-name: rotate;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rotate{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    color: inherit;
+    text-decoration: none;
+}
+.home-intro{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+.home-intro .home-intro1{
+    padding: 50px 0px;
+}
+.home-intro .home-intro2{
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,.5);
+    
+}
+.home-intro .home-intro1 h2 span{
+    font-weight: bold;
+}
+.home-intro .home-intro1 select{
+    padding: 15px 45px 15px 15px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    position: relative;
+    color: #555;
+
+}
+.home-intro .home-intro1 input{
+    padding: 15px 45px 15px 15px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    position: relative;
+    color: #555;
+}
+.home-intro .home-intro1 select{
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none; 
+    
+    
+    
+}
+.home-intro .home-intro1 input[type="submit"]{
+    padding: 15px;
+    color: black;
+}
+.home-intro .box{
+    position: relative;
+}
+.home-intro .home-intro1 i{
+    
+    position: absolute;
+    top:15px;
+    right:18px;
+    font-size: 20px;
+    color: #9d9d9d;
+    border: 1px solid transparent;
+    z-index: 1;
+}
+.home-intro .home-intro1 .fa-angle-down{
+    position: absolute;
+    top:15px;
+    right: auto;
+    left:18px;
+    font-size: 20px;
+    color: #9d9d9d;
+    border: 1px solid transparent;
+    z-index: 1;
+}
+.home-intro .home-intro1 .box{
+    padding: 0 2px;
+}
+.home-intro .home-intro1 .search{
+    background-color: #ffcd70;
+    box-shadow: inset 0 -3px 0 0 #ffb833;
+}
+.home-intro .home-intro1 .search:hover{
+    background-color: #fed385;
+}
+.home-intro1>h2{
+    margin-bottom: 25px;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.home-intro .guide{
+    display: inline-block;
+    text-align: center;
+    background-color:  rgba(0,0,0,.5);
+    border-radius: 3px;
+    margin-bottom: 100px;
+    font-size: 87%;
+    line-height: 2em;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+.home-intro .guide a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.home-intro .guide:hover{
+    background-color: #000000a2;
+}
+.home-intro .guide span{
+    float: right;
+}
+.home-intro .guide-img{
+    width: 60px;
+    padding: 10px;
+    border-radius: 12px;
+}
+.home-intro .guide-text{
+    color: white;
+    padding:10px;
+    padding-left: 20px;
+}
+.home-intro .guide-angel{
+    width: 15px;
+    background-color:#ffffff4d;
+    display: flex;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    align-items: center;
+    color: white;
+    
+}
+.home-intro .guide-angel i{
+    margin-right: 4px;
+    margin-left: 4px;
+    font-size: 20px;
+}
+.home-intro .home-footer{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    background-image: url('../img/gradient.svg');
+    background-size: 100% 60px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    opacity: .88;
+}
+.home-intro .home-footer a{
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px dashed white; 
+    text-decoration: none;
+    
+}
+.home-intro .result{
+    display: none;
+    color: white;
+    padding-top: 30px;
+}
